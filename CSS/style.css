@@ -103,3 +103,22 @@ a {
 h3 {
     font-size: 35px;  
 }
+
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: auto;
+    background-color: lightgray;   
+}
+
+
+.container_section_three_right {
+    width: calc(100% /12 *5);
+}
+
+.container_section_three_left {
+    width: calc(100% / 12 *3); 
+    
+}
