@@ -140,3 +140,84 @@ h3 {
     width: calc(100% / 12 *3);
     height: 400px;  
 }
+
+.five {
+    display: flex;
+    background-color: lightgray; 
+}
+
+.container_section_five {
+    width: calc(100% / 12 *8);
+    margin: auto;
+    text-align: center;  
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.btn.blu {
+    color: white;
+    background-color: #5865f2;
+    align-content: center;
+}
+
+footer {
+    padding: 2rem;
+    background-color: black;
+}
+.container_footer {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+}
+
+.formatting {
+    font-size: 25px;
+    color: #5865f2;
+}
+.list_title{
+    color: #5865f2;
+    font-size: 20px;   
+}
+.col-1 {
+    width: calc(100% /12 *2);
+    background-color: black;
+    line-height: 2rem;
+}
+
+span {
+    color: white;
+    vertical-align: middle;
+}
+
+.col {
+    width: calc(100% /12);
+    height: 500px;
+    background-color: black;
+    padding-right: 2rem;
+    line-height: 2rem;  
+}
+
+.footerbottom {
+    width: calc(100% /12 *6);
+    background-color: black;
+    margin: auto;
+    font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+}
+.container_footer_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: black; 
+}
+
+.row_footerbottom {
+    padding-top: 2rem;        
+}
+
+.position {
+    vertical-align: middle;
+    width: 30px;
+    height: 20px;
+}
