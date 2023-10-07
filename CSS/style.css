@@ -83,3 +83,23 @@ a {
     color: white;
     text-align: center;       
 }
+
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: auto; 
+}
+
+.container_section_two_left {
+    width: calc(100% / 12 *5);
+}
+
+.container_section_two_right {
+    width: calc(100% / 12 *3);
+}
+
+h3 {
+    font-size: 35px;  
+}
