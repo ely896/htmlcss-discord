@@ -64,13 +64,10 @@ a {
     height: 30px;
 }
 
-.row_background {
-   
+.row_background {   
     background-image: url(./img/jumbo.png);
     background-size: cover;
-    block-size: 100%;
-    
-    
+    block-size: 100%;    
 }
 
 
@@ -82,8 +79,16 @@ a {
     height: 400px;
     margin: auto;
     color: white;
-    text-align: center;       
+    text-align: center;
+    line-height: 2rem;       
 }
+
+ .btn.black {
+    background-color: black;
+    color: white;
+}
+
+
 
 .two {
     display: flex;
@@ -111,7 +116,7 @@ h3 {
     align-items: center;
     height: 600px;
     margin: auto;
-    background-color: lightgray;   
+    background-color: lightgray;
 }
 
 
