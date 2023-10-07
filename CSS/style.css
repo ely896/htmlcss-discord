@@ -122,3 +122,21 @@ h3 {
     width: calc(100% / 12 *3); 
     
 }
+
+.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}
+
+
+.container_section_four_left {
+    width: calc(100% /12 *5);
+}
+
+.container_section_four_right {
+    width: calc(100% / 12 *3);
+    height: 400px;  
+}
