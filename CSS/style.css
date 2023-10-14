@@ -1,229 +1,226 @@
+/* #Region Common*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {   
-    font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;   
 }
 
-header {
-    height: 100px;
-    background-color: #5865f2;
-    display: flex;  
+:root {
+    --discord-primary: #3061e1ff;
+    --discord-accent: #8ea1e1ff;
+    --discord-black: #23262bFF;
+    --discord-light: #d9d9d9;
+    --discord-white: #F6F7F7;
 }
+/* #endregion Common*/
 
-
-.container_header {
-    display: flex;
+/* #Region Utility*/
+.container {
+    width: 80%;
+    max-width: 1152px;
     margin: auto;
-    width: calc(100% / 12 *8);
-    background-color:  #5865f2;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+
+[class^=col-]
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
     align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-   
 }
 
-.logo {
-    width: calc(100% / 12 *2);  
+.col-2{
+    width: calc(100% / 12 * 2);
 }
 
-.menu {
-    width: calc(100% / 12 *4);       
-}
-
-.d_flex {
-    display: flex;             
-}
-
-ul {
+ul{
     list-style: none;
-    justify-content: space-between;          
 }
-
-
 a {
     text-decoration: none;
-    color: var(--white);
-    font-size: large;
-    color: white; 
-             
+    color: var(--discord-white);    
 }
 
-.container_login {
-    width: calc(100% / 12 *2);
-    text-align: right;
+.justify-content-between{
+    justify-content: space-between;
 }
 
-.btn {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 15px;
-    height: 30px;
+/* #endregion Utility*/
+
+/* #region Header */ 
+#site_header {
+    color: var(--discord-white);
+    background-color: var(--discord-primary);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.row_background {   
-    background-image: url(./img/jumbo.png);
-    background-size: cover;
-    block-size: 100%;    
+#site_header nav .logo, #site_header nav .signin{
+    flex-grow: 1;
 }
 
-
-.container_section_one {
-    width: calc(100% / 12 *6);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 400px;
-    margin: auto;
-    color: white;
-    text-align: center;
-    line-height: 2rem;       
+#site_header .menu {
+    flex-grow: 2;
+    display: flex;  
+    justify-content: space-evenly;
 }
 
- .btn.black {
-    background-color: black;
-    color: white;
+/* #button */
+.btn{
+   text-decoration: none;
+   display: inline-block;
+   background-color: transparent;
+   border: none;
+   padding: 0.75rem 0.5rem;
+   border-radius: 1.5rem;
+   font-size: 12px;   
 }
 
-
-
-.two {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    margin: auto; 
+.btn-light {
+    background-color: var(--discord-light);
+    color: var(--discord-black);
+}
+.btn-dark {
+    background-color: var(--discord-black);
+    color: var(--discord-white);
+}
+.btn-primary {
+    background-color: var(--discord-primary);
+    margin-top: 3rem;
+    margin-bottom: 5rem;
 }
 
-.container_section_two_left {
-    width: calc(100% / 12 *5);
+/* #endRegion Header */
+
+/* #region Main */
+
+.jumbotron {
+   background-image: url(./img/jumbo.png);
+   background-size: cover;
+   background-position: center;
+   text-align: center; 
 }
 
-.container_section_two_right {
-    width: calc(100% / 12 *3);
+.jumbotron .container {
+    padding: 8rem 12rem;
 }
 
-h3 {
-    font-size: 35px;  
+.jumbotron h2 {
+    font-size: 3.5rem;
+    color: var(--discord-white);
+    margin-bottom: 2rem;
 }
 
-.three {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 600px;
-    margin: auto;
-    background-color: lightgray;
+.jumbotron p {
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
 }
 
-
-.container_section_three_right {
-    width: calc(100% /12 *5);
+/* #endregion Main */
+.col-8 {
+    width: calc(100%/12 * 8);
 }
 
-.container_section_three_left {
-    width: calc(100% / 12 *3); 
+.col-4 {
+    width: calc(100% / 12 * 4);
     
 }
-
-.four {
+.row {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin: auto;   
 }
 
-
-.container_section_four_left {
-    width: calc(100% /12 *5);
+.col-4 h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
-.container_section_four_right {
-    width: calc(100% / 12 *3);
-    height: 400px;  
+.col-4 p {
+    line-height: 1.5rem;
 }
 
-.five {
-    display: flex;
-    background-color: lightgray; 
+.tech {
+    text-align: center;
+    background-color: var(--discord-light);
 }
 
-.container_section_five {
-    width: calc(100% / 12 *8);
-    margin: auto;
-    text-align: center;  
+.tech h2 {
+    font-size: 3rem;
 }
 
-h2 {
-    font-size: 35px;
+.tech p {
+    line-height: 1.5rem;
+}
+.meet, .tech {
+    background-color: var(--discord-light);
+}
+.wave {
+    color: var(--discord-light);
+    margin-bottom: -0.25rem;
 }
 
-.btn.blu {
-    color: white;
-    background-color: #5865f2;
-    align-content: center;
+.wave-bottom {
+    transform: rotate(180deg);
+    margin-top: -0.5rem;
+    color: var(--discord-light);
 }
+
+/*Region Footer */
 
 footer {
-    padding: 2rem;
-    background-color: black;
+    background-color: var(--discord-black);
+    padding: 3rem 0;
 }
-.container_footer {
+
+footer a{
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+footer h5 {
+    color: var(--discord-primary);
+    margin-bottom: 1rem;
+}
+
+footer h3 {
+    color: var(--discord-primary);
+    font-size: 3rem;
+}
+
+footer .language {
     display: flex;
-    background-color: black;
-    justify-content: center;
+    color: var(--discord-white);
+    align-items: center;
+    gap: 2px;
+    margin: 2rem 0;
 }
 
-.formatting {
-    font-size: 25px;
-    color: #5865f2;
-}
-.list_title{
-    color: #5865f2;
-    font-size: 20px;   
-}
-.col-1 {
-    width: calc(100% /12 *2);
-    background-color: black;
-    line-height: 2rem;
+.social {
+    color: var(--discord-white);
 }
 
-span {
-    color: white;
-    vertical-align: middle;
+hr.divider {
+    border: 1px solid var(--discord-primary);
+    margin: 1rem;
 }
 
-.col {
-    width: calc(100% /12);
-    height: 500px;
-    background-color: black;
-    padding-right: 2rem;
-    line-height: 2rem;
-    color: white;  
-}
-
-.footerbottom {
-    width: calc(100% /12 *6);
-    background-color: black;
-    margin: auto;
-    font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
-}
-.container_footer_bottom {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: black; 
-}
-
-.row_footerbottom {
-    padding-top: 2rem;        
-}
-
-.position {
-    vertical-align: middle;
-    width: 30px;
-    height: 20px;
-}
